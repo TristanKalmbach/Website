@@ -8,17 +8,14 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     </head>
+
     <body>
-        <div class="landing-image text-center" id="home">
+        <div class="landing-image center-align" id="home">
             <h1 class="ml5">
                 <span class="text-wrapper">
                     <span class="line line1"></span>
@@ -30,149 +27,221 @@
         </div>
 
         <!-- ABOUT ME -->
-        <div class="about text-left container" id="about">
-            <h1 data-aos="fade-right" data-aos-duration="1500" class="about-header">ABOUT ME</h1>
-            <p data-aos="fade-left" data-aos-duration="1500" class="about-detail border-bottom">Modern day web developer with modern day skills</p>
+        <div class="about text-left row container" id="about">
+            <h1 data-aos="fade-right" data-aos-duration="1000" class="about-header">ABOUT ME</h1>
+            <p data-aos="fade-left" data-aos-duration="1000" class="about-detail border-bottom">Modern day web developer with modern day skills</p>
 
-            <p data-aos="zoom-in" data-aos-duration="1500" class="lead">
-                Welcome to my webpage, thank you for visiting. My name is Tristan and I'm a professional web developer. I work for Bath Fitter in Dayton, OH as the web applications developer. 
-                My interest in computers started from a young age. My father taught me everything he knew and could from the minute I could understand it. He 
-                helped me understand what the computer does, how it does it and how I can make it do what I want. He spent his life working as an IT Administrator and while
-                that is interesting to me, my heart eventually fell for software. 
+            <p data-aos="zoom-in" data-aos-duration="1000" class="flow-text">
+                Welcome to my webpage, thank you for visiting. My name is Tristan and I'm a professional web developer. I work for Bath Fitter in Dayton, OH as the web applications developer. My
+                interest in computers started from a young age. My father taught me everything he knew and could from the minute I could understand it. He helped me understand what the computer does,
+                how it does it and how I can make it do what I want. He spent his life working as an IT Administrator and while that is interesting to me, my heart eventually fell for software.
 
-                <br>
-                <br>
+                <br />
+                <br />
 
-                While web developemnt as a whole was not my crusade, I practiced my C++ skills through various ways. Mostly from reverse engineering video games and reconstructing them
-                as emulators and sandboxes (shells of their existing selves). This was always a passion of mine. Along the way, I did learn some basic CSS and HTML but never anything major until I 
-                found myself out of work and looking for a new job. I was hired on at Bath Fitter (yeah, the bathtub people). There I learned masses about web applications and the development thereof.
-                I learned the newest and best technologies including, but not limited to, Angular, React, Vue.js, Firebase and GraphQL. These things made my life easier and as I 
-                I got used to the different style of work, I developed a fondness for web development.
+                While web developemnt as a whole was not my crusade, I practiced my C++ skills through various ways. Mostly from reverse engineering video games and reconstructing them as emulators
+                and sandboxes (shells of their existing selves). This was always a passion of mine. Along the way, I did learn some basic CSS and HTML but never anything major until I found myself out
+                of work and looking for a new job. I was hired on at Bath Fitter (yeah, the bathtub people). There I learned masses about web applications and the development thereof. I learned the
+                newest and best technologies including, but not limited to, Angular, React, Vue.js, Firebase and GraphQL. These things made my life easier and as I I got used to the different style of
+                work, I developed a fondness for web development.
 
-                <br>
-                <br>
+                <br />
+                <br />
 
-                As I discovered my skills for web development were, unbeknown to me at the time, better than I thought they could be. 
-                I began looking into freelance work to develop websites. I have taken on some projects but I am in search of more work and a wider audience to reach in order to get my work out 
-                there and attract more business. I have an array of skills that could be an asset to any person, company or enterprise. No matter the scale. I have done flat static webpages, dynamic webpages,
-                animated webpages, simple and complex web applications and CRMs/Dashboards. These projects vary in difficulty, but no matter the task, I'm up for the challenge.
+                As I discovered my skills for web development were, unbeknown to me at the time, better than I thought they could be. I began looking into freelance work to develop websites. I have
+                taken on some projects but I am in search of more work and a wider audience to reach in order to get my work out there and attract more business. I have an array of skills that could
+                be an asset to any person, company or enterprise. No matter the scale. I have done flat static webpages, dynamic webpages, animated webpages, simple and complex web applications and
+                CRMs/Dashboards. These projects vary in difficulty, but no matter the task, I'm up for the challenge.
             </p>
             <div class="tristan-photo text-right">
-                <img data-aos="zoom-in" src="./assets/tristan-profile.jpg" class="figure-img img-fluid img-thumbnail" alt="tristan-profile" height="300" width="300" />
+                <img data-aos="zoom-in" src="./assets/tristan-profile.jpg" class="materialboxed" alt="tristan-profile" height="300" width="300" />
                 <figcaption class="figure-caption text-right text-right">Tristan Kalmbach</figcaption>
             </div>
         </div>
 
         <!-- EXPERIENCE -->
-        <div class="experience text-left container" id="experience">
-            <h1 data-aos="fade-down" data-aos-duration="1500" class="about-header">MY EXPERIENCE</h1>
-            <p data-aos="fade-down" data-aos-duration="1500" class="about-detail border-bottom">Take a look at some of my preferred technologies and experience with them</p>
-
-            <!-- Angular -->
-            <div data-aos="fade-right" data-aos-duration="1500" class="media">
-                <img src="./assets/angular.png" height="100" width="100" class="mr-3" alt="..." />
-                <div class="media-body">
-                    <h5 class="mt-0">Angular 7</h5>
-                    Dozens of projects created and maintained through the Angular JavaScript framework. Angular is used all over the world by companies like Google (which is the who created it in the
-                    first place).
+        <div class="experience text-left" id="experience">
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="./assets/code-header.jpg" />
+                    <h1 data-aos="fade-down" data-aos-duration="1000" class="about-header">My Experience</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000" class="about-detail border-bottom">Take a look at some of my preferred technologies and experience with them</p>
                 </div>
             </div>
 
-            <!-- HTML5 -->
-            <div data-aos="fade-left" data-aos-duration="1500" class="media">
-                <img src="./assets/html.png" height="100" width="100" class="mr-3" alt="..." />
-                <div class="media-body">
-                    <h5 class="mt-0">HTML 5</h5>
-                    HTML has been around for decades and this iteration is by far the best to date! All websites, big or small, personal or corporate in some way or another run on HTML. It's the
-                    markup language that the web is built on. You may have used it and not even know it! Remember MySpace?
-                </div>
-            </div>
+            <div class="cards row container">
+                <h3 data-aos="zoom-in" class="center-align">My Skills</h3>
+                <p class="center-text flow-text">
+                    These are some of my preferred technologies that I used on a regular or semi-regular basis to provide adequate services to my clients. Various frameworks and libraries are not
+                    included here but are also used in conjunction with or as a replacement for these technologies. Many of these frameworks are highly sought after skills to have in this modern day
+                    of web development. Various cases apply, but for the most part a developer who posesses these skills are considered top of the line.
+                </p>
 
-            <!-- CSS 3 -->
-            <div data-aos="fade-right" data-aos-duration="1500" class="media">
-                <img src="./assets/css.png" height="100" width="100" class="mr-3" alt="..." />
-                <div class="media-body">
-                    <h5 class="mt-0">CSS 3</h5>
-                    CSS is how webpages are stylized. This way this page is laid out is a perfect example of how CSS works. You stylize each component as needed!
-                </div>
-            </div>
+                <div class="col s12">
+                    <div class="row">
+                        <!-- First Column -->
+                        <div data-aos="fade-right" data-aos-duration="1500" class="col s6">
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/angular.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
 
-            <!-- JavaScript -->
-            <div data-aos="fade-left" data-aos-duration="1500" class="media">
-                <img src="./assets/javascript.png" height="100" width="100" class="mr-3" alt="..." />
-                <div class="media-body">
-                    <h5 class="mt-0">JavaScript ES6</h5>
-                    94.5% of all webpages today run on JavaScript! JavaScript is how we communicate with and manipulate the client (webpage). JavaScript is one of the most powerful languages used
-                    today.
-                </div>
-            </div>
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/html.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
 
-            <!-- Bootstrap 4 -->
-            <div data-aos="fade-right" data-aos-duration="1500" class="media">
-                <img src="./assets/bootstrap.png" height="100" width="100" class="mr-3" alt="..." />
-                <div class="media-body">
-                    <h5 class="mt-0">BOOTSTRAP</h5>
-                    Bootstrap is one of the most popular and well documented CSS/JS component suites available today. Bootstrap is used by major corporations and freelance developers alike. This
-                    package is what made this website possible!
-                </div>
-            </div>
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/css.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
 
-            <!-- Firebase -->
-            <div data-aos="fade-left" data-aos-duration="1500" class="media">
-                <img src="./assets/firebase.png" height="100" width="100" class="mr-3" alt="..." />
-                <div class="media-body">
-                    <h5 class="mt-0">FIREBASE</h5>
-                    Firebase is one of the newer technologies on this list, but don't let that fool you. Firebase is an expansive cloud based no-sql database used by millions around the world. This is a highly sought after skill and will be the way of the future, many figure.
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/nodejs.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Column -->
+                        <div data-aos="fade-left" data-aos-duration="1500" class="col s6">
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/react.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
+
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/firebase.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
+
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/javascript.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
+
+                            <div class="card horizontal">
+                                <div class="card-image"><img src="./assets/bootstrap.png" alt="" width="100px" height="100px" /></div>
+                                <div class="card-stacked">
+                                    <div class="card-content">Angular 7</div>
+                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- CONTACT ME -->
-        <div class="contact text-left container" id="contact">
-            <h1 data-aos="fade-right" data-aos-duration="1500" class="about-header">CONTACT ME</h1>
-            <p data-aos="fade-left" data-aos-duration="1500" class="about-detail border-bottom">Interested in working with me? Contact me with the details below.</p>
+        <div class="contact text-left" id="contact">
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="./assets/code-header.jpg" />
+                    <h1 data-aos="fade-down" data-aos-duration="1000" class="about-header">Contact Me</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000" class="about-detail border-bottom">
+                        Interested in working with me? Contact me with the form below and I will get with you within a few days!
+                    </p>
+                </div>
+            </div>
 
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                    <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+            <div class="input-form row container">
+                <h3 data-aos="zoom-in" class="center-align">Contact Information</h3>
+                <div data-aos="zoom-in" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate" />
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="icon_email" type="email" class="validate" />
+                            <label for="icon_email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">my_location</i>
+                            <input id="addr" type="text" class="validate" />
+                            <label for="addr">Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">add_location</i>
+                            <input id="addr2" type="text" class="validate" />
+                            <label for="addr2">Address 2</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">location_city</i>
+                            <input id="icon_city" type="text" class="validate" />
+                            <label for="icon_city">City</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">location_on</i>
+                            <input id="icon_state" type="text" class="validate" />
+                            <label for="icon_state">State</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="icon_zip" type="text" class="validate" />
+                            <label for="icon_zip">Zip</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">Message</label>
+                        </div>
+                    </div>
+
+                    <a class="waves-effect waves-light btn-large center-align"><i class="material-icons right">send</i>Send</a>
+
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Enter your message here</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" (click)="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tristan.kalmbach@gmail.com">Submit</button>
-            </form>
+            </div>
         </div>
 
         <!-- FOOTER -->
-        <footer class="footer mt-auto py-3">
-            <div class="container">
-                <span class="text-muted">
-                    &copy; 2013<script>
-                        new Date().getFullYear() > 2017 && document.write('-' + new Date().getFullYear());</script
-                    >, Tristan Kalmbach.
-                </span>
+        <footer class="page-footer brown darken-4">
+            <div class="footer-copyright">
+                <div class="container ">
+                    © 2019 Tristan Kalmbach
+                    <a class="grey-text text-lighten-4 right" href="#!">Facebook & GitHub</a>
+                </div>
             </div>
         </footer>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="js/granim.js-2.0.0/dist/granim.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/anime-master/lib/anime.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-functions.js"></script>
         <script src="js/core.js"></script>
     </body>
 </html>

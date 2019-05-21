@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,31 +54,5 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
 }
 
-/* About */
-.about {
-  padding-top: 100px;
-}
-
-/* Experience */
-.experience {
-  padding-top: 100px;
-}
-
-.cards {
-  padding-top: 150px;
-}
-
-/* Contact */
-.input-form {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-/* Footer */
-
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
+.promo{width:100%}.promo i{margin:40px 0;color:#ee6e73;font-size:7rem;display:block}.promo-caption{font-size:1.7rem;font-weight:500;margin-top:5px;margin-bottom:0}
+.promo-example{overflow:hidden}

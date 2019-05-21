@@ -4,7 +4,7 @@
         <title>Tristan Kalmbach | Developer</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/style.css" />
@@ -12,9 +12,32 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" />
     </head>
 
     <body>
+        <!-- Navigation -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper brown darken-4">
+                    <ul id="nav-mobile" class="left hide-on-med-and-down ">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#info">INFO</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#experience">EXPERIENCE</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- HOME -->
         <div class="landing-image center-align" id="home">
             <h1 class="ml5">
                 <span class="text-wrapper">
@@ -26,215 +49,362 @@
             </h1>
         </div>
 
-        <!-- ABOUT ME -->
-        <div class="about text-left row container" id="about">
-            <h1 data-aos="fade-right" data-aos-duration="1000" class="about-header">ABOUT ME</h1>
-            <p data-aos="fade-left" data-aos-duration="1000" class="about-detail border-bottom">Modern day web developer with modern day skills</p>
-            <div class="divider"></div>
+        <!-- INFO -->
+        <div class="info container section" id="info">
+            <h1 class="info-header">INFO</h1>
+            <blockquote>Find out how you can benefit from a new website or web application</blockquote>
+            <div data-aos="fade-right" data-aos-duration="2500" class="divider"></div>
 
-            <p data-aos="zoom-in" data-aos-duration="1000" class="flow-text">
-                Welcome to my webpage, thank you for visiting. My name is Tristan and I'm a professional web developer. I work for Bath Fitter in Dayton, OH as the web applications developer. My
-                interest in computers started from a young age. My father taught me everything he knew and could from the minute I could understand it. He helped me understand what the computer does,
-                how it does it and how I can make it do what I want. He spent his life working as an IT Administrator and while that is interesting to me, my heart eventually fell for software.
-
-                <br />
-                <br />
-
-                While web developemnt as a whole was not my crusade, I practiced my C++ skills through various ways. Mostly from reverse engineering video games and reconstructing them as emulators
-                and sandboxes (shells of their existing selves). This was always a passion of mine. Along the way, I did learn some basic CSS and HTML but never anything major until I found myself out
-                of work and looking for a new job. I was hired on at Bath Fitter (yeah, the bathtub people). There I learned masses about web applications and the development thereof. I learned the
-                newest and best technologies including, but not limited to, Angular, React, Vue.js, Firebase and GraphQL. These things made my life easier and as I I got used to the different style of
-                work, I developed a fondness for web development.
-
-                <br />
-                <br />
-
-                As I discovered my skills for web development were, unbeknown to me at the time, better than I thought they could be. I began looking into freelance work to develop websites. I have
-                taken on some projects but I am in search of more work and a wider audience to reach in order to get my work out there and attract more business. I have an array of skills that could
-                be an asset to any person, company or enterprise. No matter the scale. I have done flat static webpages, dynamic webpages, animated webpages, simple and complex web applications and
-                CRMs/Dashboards. These projects vary in difficulty, but no matter the task, I'm up for the challenge.
+            <p data-aos="fade-right" class="section info-desc flow-text">
+                You're probably wondering where you or your business may benefit from having a website or application. Contrary to popular belief, it's not actually impossible to succeed without a
+                website or application in this day and age. That being said, it's increasingly more and more difficult as the years progress. The internet and technology has allowed us to reach wider
+                audiences and demographics than ever before. Having a website, a one-stop-shop, for prospective clients and cusomters to see what you offer and how you go about business is paramount
+                for the success of a small business. Time is the most valuable commodity in the world and people don't like to waste it. That's why it's important to have everything available in one
+                central location. After all, modern problems require modern solutions.
             </p>
-            <div class="tristan-photo text-right">
-                <img data-aos="zoom-in" src="./assets/tristan-profile.jpg" class="materialboxed" alt="tristan-profile" height="300" width="300" />
-                <figcaption class="figure-caption text-right text-right">Tristan Kalmbach</figcaption>
-            </div>
-        </div>
 
-        <!-- EXPERIENCE -->
-        <div class="experience text-left" id="experience">
-            <div class="parallax-container">
-                <div class="parallax">
-                    <img src="./assets/code-header.jpg" />
-                    <h1 data-aos="fade-down" data-aos-duration="1000" class="about-header">My Experience</h1>
-                    <p data-aos="fade-down" data-aos-duration="1000" class="about-detail border-bottom">Take a look at some of my preferred technologies and experience with them</p>
+            <div class="section benefits-chart">
+                <div class="row">
+                    <div data-aos="fade-up" class="col s4">
+                        <div class="center promo promo-example hoverable">
+                            <i class="material-icons">flash_on</i>
+                            <p class="promo-caption">Speed up your sales</p>
+                            <p class="light center">
+                                Your website will rapidly increase the speed at which customers have access to your products or services. Without needing to call you, email you or stop by they have
+                                all the information they need. Did you know that of the small businesses that have websites, 69% of them are having annual sales of $1,000,000 – $2,490,000
+                            </p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" class="col s4">
+                        <div class="center promo promo-example hoverable">
+                            <i class="material-icons">group</i>
+                            <p class="promo-caption">Be professional</p>
+                            <p class="light center">
+                                It's no secret that having a website makes your business look and run more professionally. What most people don't know is that 35% of small businesses feel their
+                                operation is too small to warrant a website - which is not reality. Having a website for your business, big or small, will directly improve how your customers perceive
+                                you.
+                            </p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col s4">
+                        <div class="center promo promo-example hoverable">
+                            <i class="material-icons">settings</i>
+                            <p class="promo-caption">Customize your style</p>
+                            <p class="light center">
+                                Marketing is a cruicial step in succeeding. Did you know that 91% of customers have visited a store because of an online experience? Presenting yourself and customizing
+                                your website to suit your needs and your style is one of the best ways you can convince a customer to visit your shop or utilize your services.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="cards row container">
-                <h3 data-aos="zoom-in" class="center-align">My Skills</h3>
-                <p class="center-text flow-text">
+            <p data-aos="zoom-in" class="section info-close flow-text">
+                Obviously these are not the only statistics and concepts that yield good results, but they are some of the most important. Consider these things when deciding whether or not a website
+                is right for you our your business. You never know when you may need them.
+            </p>
+        </div>
+
+        <nav class="nav-extended">
+            <div class="nav-wrapper brown darken-4"></div>
+            <div class="nav-content"></div>
+        </nav>
+
+        <!-- ABOUT ME -->
+        <div class="about text-left row container section" id="about">
+            <div class="section about-me">
+                <h1 class="about-header">ABOUT ME</h1>
+                <blockquote>Modern day web developer with modern day skills</blockquote>
+                <div class="divider" data-aos="fade-right" data-aos-duration="2500"></div>
+
+                <p data-aos="zoom-in-right" class="flow-text">
+                    I'd imagine you may be wondering: who is this guy and why would I trust him with my website? Allow me to introduce myself! My name is Tristan and I'm a lifelong computer and
+                    technology enthusiast. From a very early age I knew - and my parents knew - that computers and engineering would be my calling. I was always fascinated with technology, what it
+                    provided us as a society and its how it was harnessed to give us what we want and need. I also had an interest in learning how things worked. Computers and the internet are the
+                    greatest inventions of all time. In today's day and age there is a computer everywhere you go. A computer controls almost everything you do and you control a computer to do almost
+                    everything you want.
+                </p>
+                <p data-aos="zoom-in-right" class="flow-text">
+                    Knowing how the world was evolving around technology I decided to learn how to properly harness it and become a computer programmer. I started by learning lower-level languages
+                    like C++ and x86 Assembly. I was always interested in emulation and learning how video games were created to reverse engineer them into something I created on my own. Futher down
+                    the road, I discovered web development (in its most basic forms) by learning HTML and CSS. These are two very important languages that create the bones of most web pages. HTML is
+                    the structure and CSS is the style. Many people don't realize that they may already know some of this. Remember MySpace?
+                </p>
+
+                <p data-aos="zoom-in-right" class="flow-text">
+                    Fast forward to recent years and I have learned many of the most advance topics in web developement and cyber security. I have developed applications and websites for numerous
+                    different cases and I have applied my knowledge of these frameworks and design principles to aid me in doing so. With these technologies I am able to create, maintain and deploy
+                    any sort of web application or website for any reason to any platform at any time. This webpage itself is a prime example of how you use and incorporate several frameworks,
+                    technologies and design philosophies to create visually appealing and functional websites. If these things sound interesting or useful to you or your business you've come to the
+                    right place.
+                </p>
+            </div>
+            <div data-aos="zoom-in-right" class="section tristan-photo text-right">
+                <img src="./assets/tristan-profile.jpg" class="materialboxed" data-caption="Me and my daughter, Isabella." alt="tristan-profile" height="300" width="300" />
+            </div>
+        </div>
+
+        <nav class="nav-extended">
+            <div class="nav-wrapper brown darken-4"></div>
+            <div class="nav-content"></div>
+        </nav>
+
+        <!-- EXPERIENCE -->
+        <div class="experience text-left section" id="experience">
+            <div class="section cards row container">
+                <h1 class="skills-header">My Skills</h1>
+                <blockquote>Learn about the ways I can help you or your business</blockquote>
+                <div class="divider" data-aos="fade-right" data-aos-duration="2500"></div>
+
+                <p class="section center-text flow-text">
                     These are some of my preferred technologies that I used on a regular or semi-regular basis to provide adequate services to my clients. Various frameworks and libraries are not
                     included here but are also used in conjunction with or as a replacement for these technologies. Many of these frameworks are highly sought after skills to have in this modern day
                     of web development. Various cases apply, but for the most part a developer who posesses these skills are considered top of the line.
                 </p>
-                <div class="divider"></div>
 
-                <div class="col s12" style="padding-top: 50px">
+                <div class="section col s12">
+                    <h5>Technologies & Frameworks</h5>
                     <div class="row">
                         <!-- First Column -->
-                        <div data-aos="fade-right" data-aos-duration="1500" class="col s12 m6 l6">
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/angular.png" alt="" width="100px" height="100px" /></div>
+                        <div class="col s12 m6 l6">
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/Angular-JS-01.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        Angular - One of the worlds most powerful JavaScript frameworks developed and maintained by Google. This framework allows me to create advanced, component based
+                                        web applications from scratch and provides an easy, highly-configurable platform from which you can do almost anything.
+                                    </div>
+                                    <div class="card-action"><a href="https://angular.io/">Learn More</a></div>
                                 </div>
                             </div>
 
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/html.png" alt="" width="100px" height="100px" /></div>
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/HTML-5-01.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        HTML 5 - The latest and greatest iteration of the Hyper Text Markup Language (otherwise known as HTML). This is the language from which the bones of a website
+                                        are created. Every website in history has used or uses HTML at one point or another. HTML allows us to structure our website's layout.
+                                    </div>
+                                    <div class="card-action"><a href="https://html.com/">Learn More</a></div>
                                 </div>
                             </div>
 
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/css.png" alt="" width="100px" height="100px" /></div>
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/CSS-3-01.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        CSS 3 - Cascading Style Sheets are a language we use in conjuction with HTML to provide the style and aesthetics of a website. From the background color, to the
+                                        size of a border, to the space around a block of text. We use CSS to do these things in a simple, easy to learn format.
+                                    </div>
+                                    <div class="card-action"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Learn More</a></div>
                                 </div>
                             </div>
 
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/nodejs.png" alt="" width="100px" height="100px" /></div>
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/Node-JS-01.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        Node.js - The most important technology on here. Node is the JavaScript runtime environment that allows us to run and execute JavaScript code outside of the
+                                        browser. This is particularly important because we use Node as our server for many web applications so that its safe, fast and reliable.
+                                    </div>
+                                    <div class="card-action"><a href="https://nodejs.org/en/">Learn More</a></div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Second Column -->
-                        <div data-aos="fade-left" data-aos-duration="1500" class="col s12 m6 l6">
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/react.png" alt="" width="100px" height="100px" /></div>
+                        <div class="col s12 m6 l6">
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/React-01.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        React - Another component based JavaScript framework like Angular but this is slightly differet. This is developed and maintained by Facebook and is using a
+                                        proprietary language called JSX to create HTML components inside the JavaScript code. React is a skill that is highly sought after.
+                                    </div>
+                                    <div class="card-action"><a href="https://reactjs.org/">Learn More</a></div>
                                 </div>
                             </div>
 
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/firebase.png" alt="" width="100px" height="100px" /></div>
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/Firebase-02.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        Firebase - An online, cloud based no SQL database and hosting service created by Google. Firebase is how this website runs, does its back-end services and where
+                                        it's hosted. Firebase is completely free for standard use and is very popular, very powerful skill to have these days.
+                                    </div>
+                                    <div class="card-action"><a href="https://firebase.google.com/">Learn More</a></div>
                                 </div>
                             </div>
 
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/javascript.png" alt="" width="100px" height="100px" /></div>
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/JavaScript-01.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        JavaScript - The world runs on JavaScript. Almost all websites today use JavaScript. It's a high level, interepreted languge that we use to handle a lot of
+                                        things in website and web applications. JS is used to communicate with the server and client to build intelligent websites and apps.
+                                    </div>
+                                    <div class="card-action"><a href="https://www.javascript.com/">Learn More</a></div>
                                 </div>
                             </div>
 
-                            <div class="card horizontal">
-                                <div class="card-image"><img src="./assets/bootstrap.png" alt="" width="100px" height="100px" /></div>
+                            <div class="card horizontal hoverable">
+                                <div class="card-image"><img src="./assets/material.png" alt="" width="100px" height="100px" /></div>
                                 <div class="card-stacked">
-                                    <div class="card-content">Angular 7</div>
-                                    <div class="card-action"><a href="#">Learn More</a></div>
+                                    <div class="card-content">
+                                        Materialize - A CSS framework that provides modern, sleek and functional user interfaces for websites and web applications. This website uses Materialize as
+                                        well as thousands more. Materalize is known for its look created and made famous by Google. Look a bit familiar?
+                                    </div>
+                                    <div class="card-action"><a href="https://materializecss.com/">Learn More</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="section col s12">
+                    <h5>Charts & Data Analysis</h5>
+                    <p class="flow-text section">
+                        Charts are a very important way to visualize and present datasets like sales, projections, productivity etc. There are hundreds of different ways to customize the charts to
+                        visually strike your user(s) and present your data in a meaningful, professional and visually appealing way. I specialize, through my line of work, in presenting data and
+                        analytics with the Charts.js library.
+                    </p>
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <canvas id="myChart" width="150" height="150"></canvas>
+                        </div>
+                        <div class="col s12 m6 l6">
+                            <canvas id="myOtherChart" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section col s12">
+                    <h6>Animations</h6>
+                    <p class="flow-text section">
+                        Animations are a very cool and interesting way to display sections on your website. There are various different ways you could do this, but in todays modern web design,
+                        animations on scroll are probably some of the coolest and most sought after. These are some examples of what I can provide with content animation. The rest of this page will
+                        also support animations as an example.
+                    </p>
+
+                    <div class="row">
+                        <div data-aos="fade-right" class="section card blue-grey darken-1 col s12 l6 m6">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                <p>You can fade the content in and out but you can also...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-aos="fade-left" data-aos-duration="1500" class="section card blue-grey darken-1 col s12 l6 m6">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                <p>Fade some more... but slower</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-aos="zoom-in" data-aos-duration="1500" class="card blue-grey darken-1 col s12 m6 l6 offset-l6">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                <p>AND zoom in and out with ease..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-aos="flip-up" data-aos-duration="2000" class="card blue-grey darken-1 col s12 m6 l6 offset-l6">
+                            <div class="card-content white-text">
+                                <span class="card-title"></span>
+                                <p>... You can even flip things up and down</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="2000" class="section code-is-cool center-align">
+                        <img src="./assets/code-icon-27.jpg" alt="code-is-cool" height="250" width="250" />
+                    </div>
+                    <h4 data-aos="fade-up" data-aos-duration="2000" class="center-align">Code is awesome!</h4>
                 </div>
             </div>
         </div>
 
+        <nav class="nav-extended">
+            <div class="nav-wrapper brown darken-4"></div>
+            <div class="nav-content"></div>
+        </nav>
+
         <!-- CONTACT ME -->
-        <div class="contact text-left" id="contact">
-            <div class="parallax-container">
-                <div class="parallax">
-                    <img src="./assets/code-header.jpg" />
-                    <h1 data-aos="fade-down" data-aos-duration="1000" class="about-header">Contact Me</h1>
-                    <p data-aos="fade-down" data-aos-duration="1000" class="about-detail border-bottom">
-                        Interested in working with me? Contact me with the form below and I will get with you within a few days!
-                    </p>
+        <div class="contact text-left section" id="contact">
+            <form id="contact-form">
+                <div class="section input-form row container">
+                    <h1 data-aos="zoom-in" class="contact-header">Contact</h1>
+                    <blockquote data-aos="zoom-in">Get in touch with me and we can work together to achieve your business goals</blockquote>
+                    <div data-aos="zoom-in" class="divider"></div>
+
+                    <div data-aos="flip-up" class="section col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="name" type="text" class="validate" required />
+                                <label for="name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate" required />
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">my_location</i>
+                                <input id="addr" type="text" class="validate" required />
+                                <label for="addr">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">location_city</i>
+                                <input id="city" type="text" class="validate" required />
+                                <label for="city">City</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">location_on</i>
+                                <input id="state" type="text" class="validate" required data-length="2" />
+                                <label for="state">State (ex: OH)</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">mail</i>
+                                <input id="zip" type="text" class="validate" required />
+                                <label for="zip">Zip</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="message" class="materialize-textarea" required data-length="250"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input type="checkbox" id="allow" />
+                                <span>Allow Contact</span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <a class="waves-effect waves-light btn-large center-align" id="submit-contact"><i class="material-icons right">send</i>Send</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="input-form row container">
-                <h3 data-aos="zoom-in" class="center-align">Contact Information</h3>
-                <div class="divider"></div>
-
-                <div data-aos="zoom-in" style="padding-top: 50px" class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate" />
-                            <label for="icon_prefix">First Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">email</i>
-                            <input id="icon_email" type="email" class="validate" />
-                            <label for="icon_email">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">my_location</i>
-                            <input id="addr" type="text" class="validate" />
-                            <label for="addr">Address</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">add_location</i>
-                            <input id="addr2" type="text" class="validate" />
-                            <label for="addr2">Address 2</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s4">
-                            <i class="material-icons prefix">location_city</i>
-                            <input id="icon_city" type="text" class="validate" />
-                            <label for="icon_city">City</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons prefix">location_on</i>
-                            <input id="icon_state" type="text" class="validate" />
-                            <label for="icon_state">State</label>
-                        </div>
-                        <div class="input-field col s4">
-                            <i class="material-icons prefix">mail</i>
-                            <input id="icon_zip" type="text" class="validate" />
-                            <label for="icon_zip">Zip</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">mode_edit</i>
-                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                            <label for="icon_prefix2">Message</label>
-                        </div>
-                    </div>
-
-                    <a class="waves-effect waves-light btn-large center-align"><i class="material-icons right">send</i>Send</a>
-
-                </div>
-            </div>
+            </form>
         </div>
 
         <!-- FOOTER -->
         <footer class="page-footer brown darken-4">
             <div class="footer-copyright">
-                <div class="container ">
+                <div class="container">
                     © 2019 Tristan Kalmbach
-                    <a class="grey-text text-lighten-4 right" href="#!">Facebook & GitHub</a>
+                    <a style="padding: 10px;" class="grey-text text-lighten-4 right" href="https://www.facebook.com/tkalmbach18"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a style="padding: 10px;" class="grey-text text-lighten-4 right" href="https://www.GitHub.com/tristankalmbach"><i class="fab fa-github fa-3x"></i></a>
                 </div>
             </div>
         </footer>
@@ -246,6 +416,8 @@
         <script src="js/anime-master/lib/anime.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-functions.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
         <script src="js/core.js"></script>
     </body>
 </html>
